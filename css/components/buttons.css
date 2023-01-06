@@ -1,0 +1,66 @@
+.btn-demo {
+  background-color: rgb(0, 125, 235);
+  border-radius: 999999px;
+  padding: 10px 20px;
+  border: none;
+  color: white;
+  cursor: pointer;
+  height: fit-content;
+  animation: changing-color 5s infinite, spin 2s infinite;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes changing-color {
+  25% {
+    background-color: red;
+  }
+  50% {
+    background-color: greenyellow;
+  }
+  75% {
+    background-color: orchid;
+  }
+  100% {
+    background-color: tomato;
+  }
+}
+
+.btn-demo:hover {
+  background-color: rgb(0, 212, 240);
+  letter-spacing: 3px;
+  transition: 1s all;
+}
+
+.btn-violet {
+  background-color: rgb(94, 0, 235);
+  border-radius: 999999px;
+  padding: 10px 20px;
+  border: none;
+  color: rgb(255, 255, 255);
+  cursor: pointer;
+}
+
+.btn-violet:hover {
+  background-color: blueviolet;
+}
+
+.btn-rectangle {
+  background-color: rgb(0, 0, 0);
+  padding: 10px 20px;
+
+  border: none;
+  color: rgb(255, 255, 255);
+  cursor: pointer;
+}
+
+.btn-rectangle:hover {
+  background-color: dimgrey;
+}
